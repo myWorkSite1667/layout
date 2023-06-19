@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module-Introduction</title>
+        <style>
+            *{
+                box-sizing: border-box;
+                margin:0;
+                padding: 0;
+
+            }
+           .container{
+            height: 100vh;
+            width: 100%;
+            background:rgb(96, 43, 23);
+            display: grid;
+            gap: 10px;
+            padding: 10px;
+            grid-template-columns: 80px repeat(12,1fr);
+            grid-template-rows: 2.5fr 1fr 2fr 3fr;
+           }
+           .container div{
+            background-color: rgb(43, 248, 248);
+           }
+           .container >.sidebar{
+            background-color: yellow;
+            grid-row: 1/5;
+           }
+           .header{
+            background-color: orange;
+            grid-column: 2/-1;
+           }
+           .stat-one{
+            background-color: aqua;
+            grid-column: 2/5;
+           }
+           .stat-two{
+            background-color: rgb(149, 27, 231);
+            grid-column: 5/8;
+           }
+           .stat-three{
+            background-color: rgb(136, 243, 4);
+            grid-column: 8/ 11;
+
+           }
+           .stat-four{
+            background-color: rgba(255, 32, 32, 0.92);
+            grid-column: 11/14
+            ;
+           }
+           .chat-1{
+            background-color: antiquewhite;
+            grid-column: 2/8;
+           }
+           .chat-2{
+            background-color: rgba(255, 68, 0, 0.897);
+            grid-column: 8/14;
+
+           }
+           .overview{
+            background-color: salmon;
+            grid-column: 2/11;
+           }
+           .reminder{
+            background-color: rgba(16, 239, 127, 0.979);
+            grid-column: 11/14;
+           }
+        </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">sidebar</div>
+        <div class="header">header</div>
+        <div class="stat-one">stat-one</div>
+        <div class="stat-two">stat-two</div>
+        <div class="stat-three">stat-three</div>
+        <div class="stat-four">stat-four</div>
+        <div class="chat-1">chat-1</div>
+        <div class="chat-2">chat-2</div>
+        <div class="overview">overview</div>
+        <div class="reminder">reminder</div>
+    </div>
+</body>
+</html>
