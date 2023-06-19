@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Website</title>
+</head>
+<style>
+    body{
+        max-width: 800px;
+        margin: 0 auto;
+    }
+    .text h2{
+         font-size: 5vw;
+    }
+
+    .text2 img{
+        width: 100%;
+    }
+    .container{
+        display:flex;
+    }
+    .container .image{
+        width: 50%;
+    }
+    .container .image img{
+        width: 100%;
+    }
+    .container .image img[type="food"]{
+        width: 250px;
+    }
+    .containerTwo{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 5px;
+    }
+    .containerTwo .split{
+        
+        border: 2px solid brown;
+        border-radius: 10px;
+        padding: 10px;
+    }
+    .containerTwo .split img{
+        width: 100%;
+    }
+
+    @media screen and (max-width:575px) {
+        .container {
+            flex-direction: column-reverse;
+        }
+        .container .image {
+            width: 100%;
+        }
+        .container .image img[type="food"]{
+            width: 100%;
+        }
+       .containerTwo{
+        grid-template-columns: repeat(1, 1fr);
+       }
+        
+    }
+    @media screen and (min-width:576px) and (max-width:945px){
+        .containerTwo{
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+
+
+    
+</style>
+<body>
+  <section class="text">
+    <h2>Hello my name is pranto</h2>
+  </section>
+  <section class="text2">
+    <h3>Welcome to our world</h3>
+    <img src="image/tiger.jpg" alt="">
+  </section>
+  <section>
+    <div class="container">
+        <div class="image"><img src="image/total food.jpg" type="food" alt=""></div>
+        <div class="image"><img src="image/tiger.jpg" alt=""></div>
+    </div>
+  </section>
+  <section>
+    <h3>Multipul food</h3>
+    <div class="containerTwo">
+        <div class="split">
+            <img src="image/total food.jpg" alt="">
+            <h2>price : 1000</h2>
+            <button type="submit">Buy_</button>
+        </div>
+        <div class="split">
+            <img src="image/total food.jpg" alt="">
+            <h2>price : 2000</h2>
+            <button type="submit">Buy_</button>
+        </div>
+        <div class="split">
+            <img src="image/total food.jpg" alt="">
+            <h2>price : 3000</h2>
+            <button type="submit">Buy_</button>
+        </div>
+        <div class="split">
+            <img src="image/total food.jpg" alt="">
+            <h2>price : 4000</h2>
+            <button type="submit">Buy_</button>
+        </div>
+        <div class="split">
+            <img src="image/total food.jpg" alt="">
+            <h2>price : 5000</h2>
+            <button type="submit">Buy_</button>
+        </div>
+        <div class="split">
+            <img src="image/total food.jpg" alt="">
+            <h2>price : 6000</h2>
+            <button type="submit">Buy_</button>
+        </div>
+        <div class="split">
+            <img src="image/total food.jpg" alt="">
+            <h2>price : 7000</h2>
+            <button type="submit">Buy_</button>
+        </div>
+        <div class="split">
+            <img src="image/total food.jpg" alt="">
+            <h2>price : 8000</h2>
+            <button type="submit">Buy_</button>
+        </div>
+        <div class="split">
+            <img src="image/total food.jpg" alt="">
+            <h2>price : 9000</h2>
+            <button type="submit">Buy_</button>
+        </div>
+        <div class="split">
+            <img src="image/total food.jpg" alt="">
+            <h2>price : 10000</h2>
+            <button type="submit">Buy_</button>
+        </div>
+        <div class="split">
+            <img src="image/total food.jpg" alt="">
+            <h2>price : 11000</h2>
+            <button type="submit">Buy_</button>
+        </div>
+        <div class="split">
+            <img src="image/total food.jpg" alt="">
+            <h2>price : 12000</h2>
+            <button type="submit">Buy_</button>
+        </div>
+    </div>
+
+  </section>
+</body>
+</html>
